@@ -1,0 +1,23 @@
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+public class ShuffleArray {
+    public static void main(String[] args) {
+        // Create an ArrayList with your values
+        List<Integer> list = new ArrayList<>();
+        list.add(1);
+        list.add(2);
+        list.add(3);
+        list.add(4);
+        list.add(5);
+        list.add(6);
+        list.add(7);
+
+        // Shuffle the ArrayList
+        Collections.shuffle(list);
+
+        // The list is now shuffled
+        System.out.println(list);
+    }
+}

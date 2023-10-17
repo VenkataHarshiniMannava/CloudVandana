@@ -1,7 +1,7 @@
+1Q ANS:
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-
 public class ShuffleArray 
 {
     public static void main(String[] args)
@@ -18,3 +18,46 @@ public class ShuffleArray
         System.out.println(list);
     }
 }
+
+3Q ANS:
+import java.util.Scanner;
+public class PangramChecker 
+{
+    public static void main(String[] args) 
+    {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a sentence: ");
+        String input = scanner.nextLine();
+        boolean isPangram = checkIfPangram(input);
+        if (isPangram) 
+        {
+            System.out.println("The input is a pangram.");
+        } 
+        else 
+        {
+            System.out.println("The input is not a pangram.");
+        }
+    }
+    public static boolean checkIfPangram(String input) 
+    {
+        input = input.toLowerCase(); 
+        boolean[] alphabet = new boolean[26]; 
+        for (char c : input.toCharArray()) 
+        {
+            if (Character.isLetter(c)) 
+            {
+                int index = c - 'a';
+                alphabet[index] = true;
+            }
+        }
+        for (boolean letterPresent : alphabet) 
+        {
+            if (!letterPresent) 
+            {
+                return false;
+            }
+        }     
+        return true;  
+    }
+}
+

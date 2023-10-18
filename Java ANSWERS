@@ -1,4 +1,4 @@
-1Q ANS:
+1Q ANSWER:
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -19,7 +19,7 @@ public class ShuffleArray
     }
 }
 
-2Q ANS:
+2Q ANSWER:
 import java.util.*;
 public class RomanToInteger 
 {
@@ -57,7 +57,7 @@ public class RomanToInteger
     }
 }
 
-3Q ANS:
+3Q ANSWER:
 import java.util.Scanner;
 public class PangramChecker 
 {

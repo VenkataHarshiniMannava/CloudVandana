@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <form id="surveyForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required><br>
+
+        <label>Is this your first time using our products & services?</label>
+        <input type="checkbox" id="firstTimeYes" value="YES"> YES <br>
+        <input type="checkbox" id="firstTimeNo" value="NO"> NO<br>
+
+        <label>Would you recommend our products and services to your friends and colleagues?</label>
+        <input type="checkbox" id="recommendYes" value="YES"> YES <br>
+        <input type= "checkbox" id="recommendNo" value="NO"> NO<br>
+        
+        <label>How satisfied are you with our products and services?</label>
+        <input type="checkbox" id="satisfied" value="Satisfied"> Satisfied <br>
+        <input type="checkbox" id="undecided" value="Undecided"> Undecided <br>
+        <input type="checkbox" id="unsatisfied" value="Unsatisfied"> Unsatisfied <br>
+
+        <label for="suggestions">Do you have any suggestions to improve our service?</label>
+        <textarea id="suggestions"></textarea><br>
+
+        <button type="button" id="submitBtn" onclick="validateForm()">Submit</button>
+        <button type="button" id="resetBtn" onclick="resetForm()">Reset</button>
+    </form>
+
+    <div id="popup" style="display: none;">
+        <!-- Popup content will be displayed here -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

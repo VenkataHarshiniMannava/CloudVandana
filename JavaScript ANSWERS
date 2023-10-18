@@ -1,0 +1,20 @@
+1Q ANSWER:
+function reverseWordsInSentence() 
+{
+    var inputSentence = prompt("Enter a sentence:");
+    var words = inputSentence.split(" ");
+    var reversedWords = words.map(function(word) 
+    {
+        return word.split("").reverse().join("");
+    });
+    var reversedSentence = reversedWords.join(" ");
+    alert("Reversed sentence: " + reversedSentence);
+}
+reverseWordsInSentence();
+
+2Q ANSWER:
+const numbers = [5, 2, 9, 1, 5, 6];
+numbers.sort(function(a, b) {
+  return b - a;
+});
+console.log(numbers);
